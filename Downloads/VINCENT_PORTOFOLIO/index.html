@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">Vincent</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">My Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="vincent-foto-cv.jpg" alt="Vincent profile picture" class="fotovincent"/>
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vincent Fernando Atmajaya</h1>
+        <div class="animate">
+          <p class="section__text__p2">Majoring in Digital Business Innovation</p>
+        </div>
+
+        <div id="socials-container">
+          <img src="instagram.webp" class="icon" onclick="location.href='https://www.instagram.com/sensen.nn'" alt="Instagram" />
+          <img src="linkedinicon.webp" class="icon" onclick="location.href='https://www.linkedin.com/in/vincent-atmajaya-0a0011355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'" alt="Linkedin" />
+          <img src="whatsapp.webp" class="icon" onclick="location.href='https://wa.me/6287811146999'" alt="Whatsapp" />
+        </div>
+
+          <div class="btn-container">
+          <a href="Curriculum Vitae-CV VIncent Fa.pdf" download="Curriculum Vitae-CV VIncent Fa.pdf">
+            <button class="btn btn-color-2">Download CV</button>
+          </a>       
+        </div>
+        
+      </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text2__p1">Get To Know More</p>
+      <h1 class="title_2">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img class="about-pic" src="binuspic.jpeg" alt="Profile Picture" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img class="icon" src="education.png" alt="Experience icon" />
+              <h3>Education</h3>
+              <p>SMA Kristen Sunodia<br />BINUS University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm Vincent Fernando Atmajaya, a Digital Business Innovation student at Bina Nusantara University. 
+              My focus lies at the intersection of technology and business - developing digital solutions that address market needs while creating commercial value. 
+              Through combining technical skills with business acumen, I aim to build innovations that deliver real impact and drive digital transformation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="arrow.png" class="icon arrow" onclick="location.href='./#experience'" alt="" />
+    </section>
+
+    <!-- Skills Section -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img class="icon" src="checkmark.png" alt="Experience icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img class="icon" src="checkmark.png" alt="Experience icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img class="icon" src="checkmark.png" alt="Experience icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img class="icon" src="checkmark.png" alt="Experience icon" />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="details-container">
+
+            <div class="programming-language-container">
+            <h2 class="experience-sub-title">Programming Language</h2>
+            <div class="article-container">
+              <article>
+                <img class="icon" src="checkmark.png" alt="Experience icon" />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+              <h2 class="experience-sub-title">Database Language</h2>
+              <div class="article-container">
+                <article>
+                  <img class="icon" src="checkmark.png" alt="Experience icon" />
+                  <div>
+                    <h3>SQL Server</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article> 
+
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img class="project-img" src="bossvariasi logo.png" alt="project-1" />
+            </div>
+            <h2 class="experience-sub-title project-title">Boss Variasi Details</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.canva.com/design/DAGhZ4QJP2c/BId7XfxrV_ooRufXoXANeQ/edit?utm_content=DAGhZ4QJP2c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton';">
+                View
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img class="project-img" src="MobileAPPDemo.png" alt="project-1" />
+            </div>
+            <h2 class="experience-sub-title project-title">Boss Variasi Mobile App Prototype</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/proto/D5CNPDHGqUKSvS2tsXbinq/Bos-Variasi?page-id=28%3A466&node-id=955-3834&viewport=3626%2C61%2C0.67&t=cuwahHuYdUDGOKAv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=955%3A3834&show-proto-sidebar=1';"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img-laptop" src="webappprototype.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Boss Variasi Web App Prototype</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.figma.com/proto/D5CNPDHGqUKSvS2tsXbinq/Bos-Variasi?page-id=0%3A1&node-id=516-1549&p=f&viewport=708%2C1024%2C0.23&t=fsWwRtHQzBjNxWqK-1&scaling=contain&content-scaling=fixed&starting-point-node-id=516%3A1549&show-proto-sidebar=1';" >
+              Live Demo
+            </button>
+          </div>
+        </div>
+    </div>
+
+      <hr class="project-section-divider">
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img class="project-img-bsquare" src="bsquare.jpg" alt="project-1" />
+            </div>
+            <h2 class="experience-sub-title project-title">Binus Square Mobile Application Improvement</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/proto/DE5aVz3j2qv6gfr1QSff1f/BINUS-SQUARE?page-id=0%3A1&node-id=89-1401&viewport=259%2C-318%2C0.31&t=KzWYSDWenk17dMHs-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=89%3A1401&show-proto-sidebar=1';">
+              Live Demo
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <hr class="project-section-divider">
+
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="intrasi.jpg" alt="project-1" /> 
+          </div>
+          <h2 class="experience-sub-title project-title">Intrasi Business Idea</h2>
+          <div class="btn-container">
+            <a href="intrasi-business-proposal.pdf" download>
+              <button class="btn btn-color-2 project-btn">
+                Download
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="mobile app intrasi.png" alt="project-1" />
+          </div>
+          <h2 class="experience-sub-title project-title">Intrasi Mobile App Prototype</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.figma.com/proto/0Dk7elbiFHH4vStICShJws/Intraasi-Prototype?page-id=0%3A1&node-id=11-210&viewport=803%2C1817%2C0.29&t=qbPXjHamxAkajkY9-1&scaling=scale-down&content-scaling=fixed';"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr class="project-section-divider">
+    </div>    
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img class="project-img" src="furnitine logo .png" alt="project-1" />
+            </div>
+            <h2 class="experience-sub-title project-title">Furnitine Business Idea</h2>
+            <div class="btn-container">
+              <a href="Furnitine.pdf" download>
+                <button class="btn btn-color-2 project-btn">
+                  Download
+                </button>
+              </a>
+            </div>
+          </div>
+      </div>
+    <hr class="project-section-divider">
+    </div>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img class="project-img" src="c'groovy.jpg" alt="project-1" />
+            </div>
+            <h2 class="experience-sub-title project-title">C'Groovy Website</h2>
+            <div class="btn-container">
+              <a href="https://github.com/vivianalicia/WebDevLabProject.git">
+                <button class="btn btn-color-2 project-btn">
+                  View
+                </button>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    </section>
+
+
+    
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="email.webp" class="icon contact-icon" alt="Email icon" />
+          <p><a href="mailto:vincentatmajaya9@gmail.com">vincentatmajaya9@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="whatsapp.webp" class="icon contact-icon" alt="WhatsApp icon" />
+          <p><a href="https://wa.me/6287811146999">Whatsapp</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Vincent Fernando A. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
